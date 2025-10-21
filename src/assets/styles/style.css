@@ -66,6 +66,18 @@
   cursor: pointer; 
 }
 
+form {
+    display: flex;
+    color:#FFFFFF;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/src/assets/img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
 .breadcrumbs {
     display: -ms-flexbox;
     display: flex;
