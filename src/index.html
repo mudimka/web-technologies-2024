@@ -1,18 +1,468 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <link rel="stylesheet" href="/src/assets/styles/style.css">
-</head>
-<body>
-<div class="test" style="color: blue">
-    test
-</div>
+  </head>
 
-<script src="index.js"></script>
-</body>
+  <body>
+    <header class="site-header">
+      <a class="site-logo " href="#">IT WEBSITE</a>
+
+      <nav class="header-nav">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#">Services</a></li>
+          <li class="nav-item"><a href="#">Media</a></li>
+          <li class="nav-item"><a href="#">Cases</a></li>
+          <li class="nav-item"><a href="#">FAQ</a></li>
+          <li class="nav-item"><a href="#">Contacts</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-contacts">
+        <div class="contact-phone">
+          <img src="" class="contact-icon phone-icon" />
+          <p class="contact-info "></p>
+          <p class="contact-info "></p>
+        </div>
+        <div class="contact-email">
+          <img src="" class="contact-icon email-icon" />
+          <p class="contact-info ">itcompany@mail.com</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="main-description">
+      <h2 class="description-header header-text">
+      </h2>
+      <p class="default-text">
+      </p>
+    </div>
+
+    <div class="main-feedback">
+      <h3 class="feedback-subheader subheader-text">
+      </h3>
+        
+      <form class="feedback-form" action="" method="">
+        <div class="feedback-field">
+          <label for="feedback-phone" class="form-label"></label>
+          <div class="feedback-field-phone">
+            <img src="" id="feedback-image" />
+            <input
+              type="tel"
+              id="feedback-phone"
+              name="feedback-phone"
+              placeholder="+7 (111) 111-11-11"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="feedback-field">
+          <label for="feedback-name" class="form-label"></label>
+          <input
+            type="text"
+            id="feedback-name"
+            name="feedback-name"
+            placeholder="Иван Иванов"
+            required
+          />
+        </div>
+
+        <button type="submit" class="feedback-button"></button>
+      </form>
+    </div>
+
+    <hr />
+    <div class="development-info">
+      <div class="development-technologies">
+        <h2 class="header-text"></h2>
+        <p class="default-text"></p>
+        <h3 class="subheader-text"></h3>
+        <p class="default-text"></p>
+        <h3 class="subheader-text"></h3>
+        <p class="default-text"></p>
+      </div>
+      <div class="development-categories">
+        <ul class="development-list">
+          <li class="development-item"><a href="#"></a></li>
+          <li class="development-item"><a href="#"></a></li>
+          <li class="development-item"><a href="#"></a></li>
+          <li class="development-item"><a href="#"></a></li>
+          <li class="development-item"><a href="#"></a></li>
+          <li class="development-item"><a href="#"></a></li>
+          <li class="development-item"><a href="#"></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr />
+    <div class="projects">
+      <h2 class="header-text"></h2>
+      <div class="project-list">
+        <div class="project-column1">
+          <div class="project-item">
+            <img src="" class="project-image"/>
+            <p></p>
+          </div>
+          <div class="project-item">
+            <img src="" class="project-image"/>
+            <p></p>
+          </div>
+          <div class="project-item">
+            <img src="" class="project-image"/>
+            <p></p>
+          </div>
+          <div class="project-item">
+            <img src="" class="project-image" />
+            <p></p>
+          </div>
+          <div class="project-item">
+            <img src="" class="project-image" />
+            <p></p>
+          </div>
+        </div>
+        <div class="project-column2">
+          <div class="project-item">
+            <img src="" class="project-image" />
+            <p></p>
+          </div>
+          <div class="project-item">
+            <img src="" class="project-image" />
+            <p></p>
+          </div>
+          <div class="project-item">
+            <img src="" class="project-image" />
+            <p></p>
+          </div>
+          <div class="project-item">
+            <img src="" class="project-image" />
+            <p></p>
+          </div>
+          <div class="project-item">
+            <img src="" class="project-image" />
+            <p></p>
+          </div>
+        </div>
+        <div class="project-column3">
+          <div class="project-item">
+            <img src="" class="project-image" />
+            <p></p>
+          </div>
+          <div class="project-item">
+            <img src="" class="project-image" />
+            <p></p>
+          </div>
+          <div class="project-item">
+            <img src="" class="project-image" />
+            <p></p>
+          </div>
+          <div class="project-item">
+            <img src="" class="project-image" />
+            <p></p>
+          </div>
+          <div class="project-item">
+            <img src="" class="project-image" />
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="clients">
+      <h2 class="header-text"></h2>
+      <p class="default-text"> </p>
+      <div class="clients-companies">
+        <ul class="clients-list">
+          <li class="clients-item"><a href="#"></a></li>
+          <li class="clients-item"><a href="#"></a></li>
+          <li class="clients-item"><a href="#"></a></li>
+          <li class="clients-item"><a href="#"></a></li>
+          <li class="clients-item"><a href="#"></a></li>
+          <li class="clients-item"><a href="#"></a></li>
+          <li class="clients-item"><a href="#"></a></li>
+        </ul>
+        <button type="button" class="clients-button"></button>
+      </div>
+      <div class="clients-iteka">
+        <h2 class="header-text"></h2>
+        <p class="default-text"></p>
+
+        <p class="default-text"></p>
+
+        <div class="iteka-info">
+          <div class="iteka-category">
+            <img src="" class="iteka-icon" />
+            <p class="iteka-text default-text"></p>
+          </div>
+          <div class="iteka-category">
+            <img src="" class="iteka-icon" />
+            <p class="iteka-text default-text"></p>
+          </div>
+          <div class="users-growth">
+            <h3 class="subheader-text"></h3>
+            <p class="form-label"></p>
+          </div>
+          <div class="users-active">
+            <h3 class="subheader-text"></h3>
+            <p class="form-label"></p>
+          </div>
+          <img src="" class="clients-app" />
+          <img src=""  class="clients-app" />
+        </div>
+      </div>
+      <img src="" class="aside-image" />
+    </div>
+
+    <hr />
+
+    <div class="contact-form">
+      <div class="contact-form__text">
+        <h3 class="header__text "></h3>
+        <p class="default__text "></p>
+      </div>
+      <div class="contact-form__form">
+        <form class="contact__form" action="" method="">
+          <div class="feedback__field">
+            <label for="feedback__phone" class="form__label"></label>
+            <div class="feedback__field--phone">
+              <img
+                src=""
+                id="feedback_image"
+                alt="FlagIcon"
+              />
+              <input
+                type="tel"
+                id="feedback__phone"
+                name="feedback__phone"
+              />
+            </div>
+          </div>
+
+          <div class="feedback__field">
+            <label for="feedback__name" class="form__label"></label>
+            <input
+              type="text"
+              id="feedback__name"
+              name="feedback__name"
+            />
+          </div>
+
+          <button type="submit" class="contact__button">
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="development-stages">
+      <div class="development-stages-text">
+        <h3 class="header-text"></h3>
+      </div>
+      <div class="stage-item left-column">
+        <h4 class="stage-header"></h4>
+        <img src="" class="stage-image"/>
+        <p class="default-text"></p>
+      </div>
+      <div class="stage-item">
+        <h4 class="stage-header"></h4>
+        <img src="" class="stage-image"/>
+        <p class="default-text"></p>
+      </div>
+      <div class="stage-item left-column">
+        <h4 class="stage-header"></h4>
+        <img src="" class="stage-image"/>
+        <p class="default-text"></p>
+      </div>
+      <div class="stage-item">
+        <h4 class="stage-header"></h4>
+        <img src="" class="stage-image"/>
+        <p class="default-text"></p>
+      </div>
+      <div class="stage-item left-column">
+        <h4 class="stage-header"></h4>
+        <img src="" class="stage-image"/>
+        <p class="default-text"></p>
+      </div>
+      <div class="stage-item">
+        <h4 class="stage-header"></h4>
+        <img src="" class="stage-image"/>
+        <p class="default-text"></p>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="company-about">
+      <div class="company-text">
+        <h3 class="header-text"></h3>
+        <p class="default-text"></p>
+        <div class="company-stats">
+          <h3 class="header-text"></h3>
+          <p class="form-label"></p>
+        </div>
+        <div class="company-stats">
+          <h3 class="header-text"></h3>
+          <p class="form-label"></p>
+        </div>
+        <div class="company-stats">
+          <h3 class="header-text"></h3>
+          <p class="form-label"></p>
+        </div>
+        <p class="default-text"></p>
+      </div>
+      <div class="company-video">
+        <img src="" alt="future_video" />
+        <img class="video-button" src="" alt="play_video" />
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="book-advert">
+      <div class="book-advert-text">
+        <h3 class="header-text "></h3>
+      </div>
+      <div class="book-advert-form">
+        <form class="book-form" action="" method="">
+          <div class="feedback-field">
+            <label for="feedback-phone" class="form-label"></label>
+            <div class="feedback-field-phone">
+              <img id="feedback-image" src="" alt="FlagIcon"/>
+              <input
+                type="tel"
+                id="feedback-phone"
+                name="feedback-phone"
+              />
+            </div>
+          </div>
+
+          <div class="feedback-field">
+            <input
+              type="text"
+              id="feedback-name"
+              class="book-form-name"
+              name="feedback-name"
+            />
+          </div>
+
+          <div class="book-field">
+            <label for="feedback-email" class="form-label"></label>
+            <div class="book-field-email">
+              <input
+              type="email"
+              id="feedback-email"
+              name="feedback-email"
+            />
+            </div>
+          </div>
+
+          <button type="submit" class="book-button">
+          </button>
+        </form>
+      </div>
+      <div class="book-image">
+        <img src="" alt="book" />
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="faq">
+      <div class="faq-text">
+        <h3 class="header-text"></h3>
+      </div>
+      <div class="faq-questions">
+        <div class="question">
+          <h4 class="stage-header"></h4>
+          <img class="faq-image" src="" alt="open_block"/>
+        </div>
+        <div class="question">
+          <h4 class="stage-header"></h4>
+          <img
+            class="faq-image"
+            src=""
+            alt="open_block"
+          />
+        </div>
+        <div class="question border-bottom">
+          <h4 class="stage-header">
+          </h4>
+          <img
+            class="faq-image"
+            src=""
+            alt="open_block"
+          />
+        </div>
+        <div class="question border-bottom">
+          <h4 class="stage-header">
+          </h4>
+          <img
+            class="faq-image"
+            src=""
+            alt="open_block"
+          />
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <footer class="footer">
+      <a href="#" class="footer-logo logo "></a>
+      <div class="footer-main">
+        <div class="footer-item">
+          <img
+            class="footer-icon icon-grayscale"
+            src=""
+            alt="Icon"
+          />
+          <p class="form-label footer-text"></p>
+          <p class="default-text "></p>
+        </div>
+
+        <div class="footer-item">
+          <img
+            class="footer-icon icon-grayscale"
+            src="g"
+            alt="Icon"
+          />
+          <p class="form-label footer-text"></p>
+          <p class="default-text "></p>
+        </div>
+
+        <div class="footer-item">
+          <img
+            class="footer-icon icon-grayscale"
+            src=""
+            alt="Icon"
+          />
+          <p class="form-label footer-text"></p>
+          <p class="default-text "></p>
+        </div>
+
+        <div class="footer-item">
+          <img
+            class="footer-icon"
+            src=""
+            alt="Icon"
+          />
+          <p class="form-label footer-text"></p>
+          <p class="default-text "></p>
+        </div>
+        <div class="footer-bottom">
+          <img class="footer-map" src="" alt="Map" />
+          <p class="default-text "></p>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
 </html>
