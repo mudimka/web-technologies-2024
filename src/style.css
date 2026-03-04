@@ -86,16 +86,6 @@ button:active {
     display: none;
 }
 
-#result {
-    background-color: #363636;
-    padding: 15px;
-    border-radius: 8px;
-    margin-top: 20px;
-    border-left: 4px solid #d6b7b7;
-    font-size: 16px;
-    line-height: 1.6;
-}
-
 label {
     display: block;
     margin-bottom: 8px;
@@ -114,10 +104,6 @@ label {
     margin-top: 15px;
     padding-top: 15px;
     border-top: 1px solid #404040;
-}
-
-#result:not(.hidden) {
-    animation: slideIn 0.3s ease;
 }
 
 @keyframes slideIn {

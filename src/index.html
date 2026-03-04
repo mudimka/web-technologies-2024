@@ -19,7 +19,7 @@
             </select>
         </div>
 
-        <div class="menu-section hidden" id="sizeDiv">
+        <div class="menu-section" id="sizeDiv">
             <h2>Выберите размер</h2>
             <select id="size">
                 <option value="Большая" selected>Большая</option>
@@ -27,15 +27,16 @@
             </select>
         </div>
 
-        <div class="menu-section hidden" id="toppingsDiv">
+        <div class="menu-section" id="toppingsDiv">
             <h2>Добавки</h2>
-            <label><input type="checkbox" value="сливочная моцарелла"> Сливочная моцарелла</label><br />
-            <label><input type="checkbox" value="сырный борт"> Сырный борт</label><br />
-            <label><input type="checkbox" value="чедер и пармезан"> Чедер и пармезан</label><br />
+            <label><input type="checkbox" value="сливочная моцарелла" id="topping1"> Сливочная моцарелла</label><br />
+            <label><input type="checkbox" value="сырный борт" id="topping2"> Сырный борт</label><br />
+            <label><input type="checkbox" value="чедер и пармезан" id="topping3"> Чедер и пармезан</label><br />
         </div>
 
-        <button id="calculateBtn" class="hidden">Рассчитать стоимость и калорийность</button>
-        <p id="result"></p>
+        <button id="calculateBtn">Добавить в корзину за <br>
+                    <span id="price">0</span> рублей (<span id="calories">0</span> Ккалорий)
+        </button>
     </div>
 
     <script src="pizza.js"></script>
