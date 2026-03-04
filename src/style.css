@@ -1,0 +1,132 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a1a;
+    margin: 0;
+    padding: 20px;
+    color: #e0e0e0;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #2d2d2d;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid #404040;
+}
+
+h1, h2 {
+    color: #d8d3d3;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+h1 {
+    border-bottom: 2px solid #404040;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.menu-section {
+    margin-bottom: 25px;
+    background: #363636;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #404040;
+    background-color: #404040;
+    color: #e0e0e0;
+    font-size: 14px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+select:hover {
+    border-color: #d8d3d3;
+}
+
+select:focus {
+    outline: none;
+    border-color: #d8d3d3;
+    box-shadow: 0 0 0 4px rgba(143, 69, 172, 0.2);
+}
+
+button {
+    background-color: #d8d3d3;
+    color: #1a1a1a;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #d8d3d3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(177, 96, 194, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.hidden {
+    display: none;
+}
+
+#result {
+    background-color: #363636;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border-left: 4px solid #d6b7b7;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #b0b0b0;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.total-price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #eaecc2;
+    text-align: right;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #404040;
+}
+
+#result:not(.hidden) {
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
