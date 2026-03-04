@@ -17,22 +17,12 @@ class Pizza {
     };
   
     constructor(pizzaType, size) {
-        if (!Pizza.PIZZA_TYPES[pizzaType]) {
-            throw new Error("Неизвестный тип пиццы");
-        }
-        if (!Pizza.SIZE_TYPES[size]) {
-            throw new Error("Неизвестный размер пиццы");
-        }
-  
         this.pizzaType = pizzaType;
         this.size = size;
         this.toppings = [];
     }
   
     addTopping(topping) {
-        if (!Pizza.TOPPINGS[topping]) {
-            throw new Error("Неизвестная добавка");
-        }
         this.toppings.push(topping);
     }
   
@@ -73,11 +63,6 @@ document.addEventListener('DOMContentLoaded', function() {
 document.getElementById('calculateBtn').addEventListener('click', function() {
     const pizzaType = document.getElementById('pizzaType').value;
     const size = document.getElementById('size').value;
-
-    if (!pizzaType || !size) {
-        alert("Пожалуйста, выберите пиццу и размер.");
-        return;
-    }
 
     const pizza = new Pizza(pizzaType, size);
 
