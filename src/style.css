@@ -1,118 +1,144 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #1a1a1a;
+    background-color: #f5f5f5;
     margin: 0;
     padding: 20px;
-    color: #e0e0e0;
+    color: #333;
 }
 
 .container {
-    max-width: 600px;
+    max-width: 900px;
     margin: auto;
-    background: #2d2d2d;
+    background: white;
     padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    border: 1px solid #404040;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 h1, h2 {
-    color: #d8d3d3;
-    font-weight: 500;
-    letter-spacing: 0.5px;
+    color: #2c3e50;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
 }
 
-h1 {
-    border-bottom: 2px solid #404040;
-    padding-bottom: 20px;
-    text-align: center;
+/* Список постов */
+.posts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.menu-section {
-    margin-bottom: 25px;
-    background: #363636;
-    padding: 15px;
+.post-card {
+    background: #f9f9f9;
+    padding: 15px 20px;
     border-radius: 8px;
+    border-left: 5px solid #3498db;
+    transition: transform 0.2s;
 }
 
-select {
-    width: 100%;
+.post-card:hover {
+    transform: translateX(5px);
+    background: #f1f1f1;
+}
+
+.post-card h3 {
+    margin-top: 0;
+    color: #2980b9;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #e67e22;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Детальная страница */
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.post-full {
+    background: #fef9e7;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.post-full h1 {
+    margin-top: 0;
+    border-bottom: none;
+}
+
+.post-body {
+    font-size: 1.1em;
+    line-height: 1.5;
+    white-space: pre-wrap;
+}
+
+.post-meta {
+    color: #7f8c8d;
+    font-size: 0.9em;
+    margin-top: 15px;
+    border-top: 1px solid #ecf0f1;
+    padding-top: 10px;
+}
+
+/* Комментарии */
+.comments-list {
+    margin-top: 20px;
+}
+
+.comment {
+    background: #f8f9fa;
+    padding: 12px 18px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.comment-header {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.comment-email {
+    font-size: 0.85em;
+    color: #6c757d;
+    font-weight: normal;
+}
+
+.comment-body {
+    margin: 0;
+    color: #495057;
+    line-height: 1.4;
+}
+
+/* Ошибки и информация */
+.error {
+    color: #c0392b;
+    background: #fadbd8;
     padding: 12px;
     border-radius: 6px;
-    border: 1px solid #404040;
-    background-color: #404040;
-    color: #e0e0e0;
-    font-size: 14px;
-    cursor: pointer;
-    transition: border-color 0.3s ease;
+    border-left: 5px solid #e74c3c;
 }
 
-select:hover {
-    border-color: #d8d3d3;
-}
-
-select:focus {
-    outline: none;
-    border-color: #d8d3d3;
-    box-shadow: 0 0 0 4px rgba(143, 69, 172, 0.2);
-}
-
-button {
-    background-color: #d8d3d3;
-    color: #1a1a1a;
-    padding: 14px 20px;
-    border: none;
+.info {
+    color: #2c3e50;
+    background: #d5f5e3;
+    padding: 12px;
     border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    transition: all 0.3s ease;
-    width: 100%;
-    text-transform: uppercase;
-}
-
-button:hover {
-    background-color: #d8d3d3;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(177, 96, 194, 0.3);
-}
-
-button:active {
-    transform: translateY(0);
-}
-
-.hidden {
-    display: none;
-}
-
-label {
-    display: block;
-    margin-bottom: 8px;
-    color: #b0b0b0;
-    font-weight: 500;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.total-price {
-    font-size: 24px;
-    font-weight: 700;
-    color: #eaecc2;
-    text-align: right;
-    margin-top: 15px;
-    padding-top: 15px;
-    border-top: 1px solid #404040;
-}
-
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
